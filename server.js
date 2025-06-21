@@ -19,9 +19,10 @@ app.use(express.json());
 
 // Habilita CORS
 app.use(cors({
-  origin: 'http://localhost:8080', // URL do frontend Vue
+  origin: 'https://lumi-front.onrender.com', // URL pública do frontend no Render
   credentials: true
 }));
+
 
 // Rotas
 app.use('/auth', authRoutes); // Rotas de autenticação
